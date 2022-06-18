@@ -8,123 +8,131 @@
     <link href="https://fonts.googleapis.com/css?family=Ruda&display=swap" rel="stylesheet" />
     <title>Franpapel SRL - Mayorista en Librería</title>
 </head>
-<body>
+<body class="contenedor">
     <!-- MENU -->
     <nav class="menu">
-        <ul class="menuItems">
+        <h5 class="slogan" >MAYORISTA</h5>
+        <ul class>
             <li><a href="./pages/nosotros.html">NOSOTROS</a></li> 
-            <li><a href="index.html#ubicacionfp">UBICACIÓN</a></li>
-            <!-- LOGO --> 
-            <li><a href="index.html"><img src="./assets/img/logo.png"></a></li> 
-            <li><a href="./pages/precios.html">PRECIOS</a></li>
-            <li><a href="index.html#formulariocontacto">CONTACTO</span></li>
-        </ul> 
-    </nav>
-    <header>
-        <!-- SLOGAN --> 
-        <section class="slogan">
-            <span>MAYORISTA EN LIBRERIA</span>
+            <li><a href="./pages/login.html">LOGIN</a></li>
             
-        </section>
-        <!-- TIENDA LINK -->    
-        <Section class="tienda">
-            <a href="./pages/tienda.html" class="store">TIENDA</a>
-        </section>
-    </header>
-    <main>
+        </ul>
+            <!-- LOGO -->
+            <a href="index.html" class="logoMenu"><img src="./assets/img/logo.png"></a>    
+        <ul>             
+            <li><a href="./pages/precios.html">PRECIOS</a></li>
+            <li><a href="index.html#contactoBoton">CONTACTO</span></li>
+        </ul> 
+            <div class="tienda">
+                <a href="./pages/tienda.html">TIENDA</a>
+            </div>    
+        
+    </nav>
+
+    <main class="main">
         <!-- SECCION BANNER -->   
-        <section banner>
-            <img src="./assets/img/banner.jpg" class="banner1" alt="">
-        </section>
-        <!-- SECCION SERVICIOS -->
-        <div class="servicios">
-            <section envios>
-                <span  class="senvios">Envíos a todo el País</span>
-                <span  class="senvios2">Sin Cargo en CABA y GBA</span>
-            </section>
-            <section precios>
-                <span  class="sprecios">Precios Especiales</span>
-                <span  class="sprecios2">El mayor surtido al mejor precio</span>
-            </section>
-            <section>
-                <span  class="scontact">Contactanos</span>
-                <span  class="scontact2">Tenemos los mejores</span>
-                <span  class="scontact3">Asesores del Rubro</span>
-            </section>
-            <section>
-                <span  class="sbrand">Marcas</span>
-                <span  class="sbrand2">Todas las Marcas</span>
-            </section>
+        <div class="banner" >
+            <img src="./assets/img/banner.jpg" alt="">
         </div>
-        <!-- SERVICIOS ICONOS -->
-        <section class="iconos">
-            <img src="./assets/img/delivery.svg" class="delivery">
-            <img src="./assets/img/descuento.svg" class="descuento">
-            <img src="./assets/img/atenci.svg" class="contacto">
-            <img src="./assets/img/brand.jpg" class="marcas">
-        </section>  
-        <!-- SECCION MARCAS -->
-        <section marcas class="marcascarrousel"> 
-        </section>
-        <section class="marcastexto">
-            <span>MARCAS</span> 
-        </section>
-        <!-- SECCION ULTIMOS INGRESOS -->
-        <section ultimos ingresos class="ultimosingresos"> 
-            <section class="uin">
-                <img src="./assets/img/permanen.png"/>
-                <img src="./assets/img/permanen.png"/>
-                <img src="./assets/img/permanen.png"/>
-                <img src="./assets/img/permanen.png"/>
-                <img src="./assets/img/permanen.png"/>
-                <img src="./assets/img/permanen.png"/>
+        <!-- SECCION SERVICIOS -->
+        <section class="servicios">
+            <section class="servicioEnvios">
+                <img src="./assets/img/delivery.svg" class="envioImg">
+                <h3>Envíos a todo el País</h3>
+                <p>Sin Cargo en CABA y GBA</p>
+            </section>
+            <section class="servicioDescuento">
+                <img src="./assets/img/descuento.svg" >
+                <h3>Precios Especiales</h3>
+                <p>El mayor surtido</p>
+                <p>al mejor precio</p>
+            </section>
+            <section class="servicioContacto">
+                <img src="./assets/img/atenci.svg" >
+                <h3>Contactanos</h3>
+                <p>Tenemos los mejores</p>
+                <p>Asesores del Rubro</p>
+            </section>
+            <section class="servicioMarcas">
+                <img src="./assets/img/marcas.svg" >
+                <h3>Marcas</h3>
+                <p>Todas las Marca</p>
             </section>
         </section>
-        <section class="ultimostexto">
-            <span id="ultimostextoo" >ULTIMOS INGRESOS</span>
+        <!-- SERVICIOS ICONOS -->
+       
+        <!-- SECCION MARCAS -->
+            <section class="marcasBoton">
+                <section class="marcasTitulo">
+                    <H4>MARCAS</H4>
+                </section>
+            </section>
+            <section marcas class="marcasCarrousel">
+                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a>
+                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a> 
+                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a> 
+                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a> 
+                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a> 
+                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a>                                   
+            </section>
+        <!-- SECCION ULTIMOS INGRESOS -->
+        <section class="ultimosBoton">
+            <section class="ultimosTexto">
+                <H4>ULTIMOS INGRESOS</H4>
+            </section>
+        </section>    
+        <section ultimos ingresos class="ultimosIngresos"> 
+            <a href="#"><img src="./assets/img/permanen.png"/></a>
+            <a href="#"><img src="./assets/img/permanen.png"/></a>
+            <a href="#"><img src="./assets/img/permanen.png"/></a>
+            <a href="#"><img src="./assets/img/permanen.png"/></a>
+            <a href="#"><img src="./assets/img/permanen.png"/></a>
+            <a href="#"><img src="./assets/img/permanen.png"/></a>                
         </section>
-        <!-- SECCION RECOMENDADOS -->
-        <section class="recomendados"> 
-        </section>
-        <section class="recomendadostexto">
-            <span>RECOMENDADOS</span>
-        </section>
+        
         <!-- SECCION UBICACION -->
-        <section class="ubicacion1"> 
+        <section class="ubicacionBoton"> 
+            <section class="ubicacionTexto">
+                <H4>UBICACIÓN</H4> 
+            </section>
+        </section>
+        <section class="ubicacionMapa"> 
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7816.266761048635!2d-58.517662879873114!3d-34.54506365023456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fd57e9a21f894c9!2sFRANPAPEL+-+Librer%C3%ADa+Mayorista!5e0!3m2!1sen!2sar!4v1539886785942" class="map" ></iframe>
         </section>
-        <section class="ubicaciontexto">
-            <span id="ubicacionfp">UBICACIÓN</span> 
-        </section>
         <!-- SECCION FORMULARIO CONTACTO -->
-        <section form class="form"> 
-            <form action="" class="formcont">
-                <fieldset>
-                    <Legend class="ayudarte">En que podemos ayudarte?</Legend>
-                    <label class="nombre" for="">Nombre</label>
-                    <input type="text" id="nombree">
-                    <label class="telefono" for="">Telefono</label>
-                    <input type="text" id="telefonoo">
-                    <label class="email" for="Email">Correo</label>
-                    <input type="email" id="emaill">
-                    <label class="empresa" for="">Empresa</label>
-                    <input type="text" id="empresaa">
-                    <label class="mensaje" for="">Mensaje</label>
-                    <input type="text" id="mensajee">
-                    <input type="submit" id="enviar" value="ENVIAR">
-                </fieldset>
-            </form>
-            <section class="formtexto">
-                <span id="formulariocontacto">CONTACTO</span>           
+        
+        <section class="contactoBoton"> 
+            <section class="contactoTexto">
+                <H4>CONTACTO</H4> 
             </section>
-        </section>        
+        </section>
+        <section class="formularioContactoSeccion">
+            <form class="formularioContacto">
+                <div class="formularioNombre">
+                    <label for="name">NOMBRE:</label>
+                    <input id="name" type="text" name="nombre">
+                </div>
+                <div class="formularioEmail">
+                    <label for="email">EMAIL:</label>
+                    <input id="email" type="text" name="email">
+                </div>
+                <div class="formularioTelefono">
+                    <label for="asunto">TELEFONO:</label>
+                    <input id="subject" type="number" name="telefono">
+                </div>
+                <div class="formularioMensaje">
+                    <label id="contect" for="content">MENSAJE</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                    <button type="submit">ENVIAR</button>
+    
+                </div>
+            </form>
+        </section>
     </main>    
     <!-- SECCION FOOTER -->    
-    <footer>
+    <footer class="footer">
         <!-- SECCION FOOTER IZQUIERDA -->  
-        <section class="ftleft">
-            <span>Mobile Version</span>
-        </section>
+
         <!-- SECCION FOOTER MEDIO -->  
         <section class="ftmid">
             <span>© Copyright 2022 FRANPAPEL SRL</span>
@@ -132,8 +140,8 @@
         </section>
         <!-- SECCION FOOTER DERECHA -->  
         <section class="redes">
-            <img src="./assets/img/fb.svg"/>
-            <img src="./assets/img/ig.svg"/>
+            <a href="#"><img src="./assets/img/fb.svg"/></a>
+            <a href="#"><img src="./assets/img/ig.svg"/></a>
         </section>
     </footer>   
 </body>
