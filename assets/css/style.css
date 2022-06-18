@@ -369,7 +369,6 @@ flex-direction: column;
 /* SIDE BAR */
 .categoriasYfiltros {
   display: flex;
-  overflow-inline: ;
   flex-direction: column;
   margin-left: 50px;
   width: 300px;
