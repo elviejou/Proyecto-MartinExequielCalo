@@ -110,7 +110,7 @@ flex-direction: column;
   padding: 10px;
 }
 .servicioDescuento{
-  width: 250px;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,7 +118,7 @@ flex-direction: column;
   padding: 10px;
 } 
 .servicioContacto{
-  width: 250px;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,7 @@ flex-direction: column;
   padding: 10px;
 }
 .servicioMarcas{
-  width: 250px;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -388,11 +388,12 @@ text-decoration: none;
 
 }
 .shop{
+  margin: 30px;
   width: auto;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 250px;
  
 }
 
@@ -466,6 +467,7 @@ text-decoration: none;
     justify-content: center;
     width: 100%
   }
+  
   .slogan{
    display: none;
   }
@@ -490,6 +492,10 @@ text-decoration: none;
   .banner{
     display: flex;
   }
+  .servicios{
+    display: flex;
+    flex-direction: column;
+  }
   .marcasCarrousel a:nth-child(6) { 
     display: none;
   }
@@ -508,8 +514,22 @@ text-decoration: none;
   .footer{
     display: flex;
     justify-content: center;
-    width: 100%
+    width: 100%;
   }
+  .nosotrosPage{
+x    width: auto;
+  }
+  .login{
+    width: auto;
+  }
+  .cambioDePrecios{
+    width: auto;
+  }
+  .shop{
+    width: auto;
+    justify-content: center;
+  }
+
 
 }  
 @media(min-width:576px){
@@ -567,6 +587,18 @@ text-decoration: none;
     justify-content: center;
     width: 100%
   }
+  .nosotrosPage{
+    width: auto;
+  }
+  .login{
+    width: auto;
+  }
+  .cambioDePrecios{
+    width: auto;
+  }
+  .shop{
+    width: auto;
+  }
 
 }
   @media(min-width:768px){
@@ -618,6 +650,18 @@ text-decoration: none;
     justify-content: center;
     width: 100%
   }
+  .nosotrosPage{
+    width: auto;
+  }
+  .login{
+    width: auto;
+  }
+  .cambioDePrecios{
+    width: auto;
+  }
+  .shop{
+    width: auto;
+  }
 
   }
     @media(min-width:992px){
@@ -656,6 +700,18 @@ text-decoration: none;
     .marcasCarrousel a:nth-child(6) { 
     display: none;
   }
+  .nosotrosPage{
+    width: auto;
+  }
+  .login{
+    width: auto;
+  }
+  .cambioDePrecios{
+    width: auto;
+  }
+  .shop{
+    width: auto;
+  }
   }  
       @media(min-width:1200px){
       
@@ -689,6 +745,18 @@ text-decoration: none;
         display: flex;
         justify-content: space-between;
         width: 100%
+      }
+      .nosotrosPage{
+        width: auto;
+      }
+      .login{
+        width: auto;
+      }
+      .cambioDePrecios{
+        width: auto;
+      }
+      .shop{
+        width: auto;
       }
 
     }  
