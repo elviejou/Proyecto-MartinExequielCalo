@@ -4,65 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- LINK EFECTOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ruda&display=swap" rel="stylesheet" />
+    <!-- LINK BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- LINK FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <title>Franpapel SRL - Mayorista en Librería</title>
 </head>
-<body class="contenedor">
+<body>
     <!-- MENU -->
-    <nav class="menu">
-        <h5 class="slogan" >MAYORISTA</h5>
-        <ul class>
-            <li><a href="./pages/nosotros.html">NOSOTROS</a></li> 
-            <li><a href="./pages/login.html">LOGIN</a></li>
-            
-        </ul>
+    <nav class="navbar sticky-top navbar-expand-lg bg-light" style="background-color: beige !important;">
+        <section class="container-fluid">
             <!-- LOGO -->
-            <a href="index.html" class="logoMenu" data-aos="zoom-in"><img src="./assets/img/logo.png"></a>    
-        <ul>             
-            <li><a href="./pages/precios.html">PRECIOS</a></li>
-            <li><a href="index.html#contactoBoton">CONTACTO</span></li>
-        </ul> 
-            <div class="tienda">
+          <a class="navbar-brand col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2" href="./index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <section class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- LINK NOSOTROS-->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">NOSOTROS</a>
+                </li>
+                <!-- LINK CAMBIO DE PRECIOS-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/precios.html">PRECIOS</a>
+                </li>
+                <!-- LINK CONTACTO-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">CONTACTO</a>
+                </li>
+                <!-- LINK LOGIN-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    LOGIN
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./pages/login.html">INGRESAR</a></li>
+                    <li><a class="dropdown-item" href="#">REGISTRARSE</a></li>
+                    <li><hr class="dropdown-sectionider"></li>
+                    <li><a class="dropdown-item" href="#">MI CUENTA</a></li>
+                    </ul>
+                </li> 
+            </ul>
+            <!-- LINK TIENDA-->  
+            <section class="tienda justify-content-center align-content-center">
                 <a href="./pages/tienda.html">TIENDA</a>
-            </div>    
-        
-    </nav>
-
-    <main class="main">
-        <!-- SECCION BANNER -->   
-        <div class="banner" >
-            <img src="./assets/img/banner.jpg" alt="">
-        </div>
-        <!-- SECCION SERVICIOS -->
-        <section class="servicios">
-            <section class="servicioEnvios">
-                <img src="./assets/img/delivery.svg" class="envioImg">
-                <h3>Envíos a todo el País</h3>
-                <p>Sin Cargo en CABA y GBA</p>
+            </section> 
+          </section>
+        </section>
+      </nav>
+   
+    <main class="main container-fluid">
+        <!-- SECCION BANNER -->
+        <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <section class="carousel-inner">
+              <section class="carousel-item active" data-bs-interval="10000">
+                <img src="./assets/img/banner.jpg" class="d-block w-100" alt="...">
+              </section>
+              <section class="carousel-item" data-bs-interval="2000">
+                <img src="./assets/img/banner.jpg" class="d-block w-100" alt="...">
+              </section>
+              <section class="carousel-item">
+                <img src="./assets/img/banner.jpg" class="d-block w-100" alt="...">
+              </section>
             </section>
-            <section class="servicioDescuento">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </section>
+   
+      
+        <!-- SECCION SERVICIOS -->
+        <section class="row justify-content-between text-center">
+            <section class="servicioEnvios col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="./assets/img/delivery.svg" class="envioImg">
+                <h3 class="">Envíos a todo el País</h3>
+                <small>Sin Cargo en CABA y GBA</small>
+            </section>
+            <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
                 <img src="./assets/img/descuento.svg" >
                 <h3>Precios Especiales</h3>
-                <p>El mayor surtido</p>
-                <p>al mejor precio</p>
+                <small>El mayor surtido</small>
+                <small>al mejor precio</small>
             </section>
-            <section class="servicioContacto">
+            <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
                 <img src="./assets/img/atenci.svg" >
                 <h3>Contactanos</h3>
-                <p>Tenemos los mejores</p>
-                <p>Asesores del Rubro</p>
+                <small>Tenemos los mejores</small>
+                <small>Asesores del Rubro</small>
             </section>
-            <section class="servicioMarcas">
+            <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
                 <img src="./assets/img/marcas.svg" >
                 <h3>Marcas</h3>
-                <p>Todas las Marca</p>
+                <small>Todas las Marca</small>
             </section>
         </section>
-        <!-- SERVICIOS ICONOS -->
        
         <!-- SECCION MARCAS -->
             <section class="marcasBoton">
@@ -70,28 +116,29 @@
                     <H4>MARCAS</H4>
                 </section>
             </section>
-            <section marcas class="marcasCarrousel">
-                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a>
-                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a> 
-                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a> 
-                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a> 
-                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a> 
-                <a href="#"><img src="./assets/img/ledesmaMarca.svg"/></a>                                   
+            <section class="marcasCarrousel row justify-content-between text-center">
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/ledesmaMarca.svg" class="img-fluid"></a>
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/ledesmaMarca.svg" class="img-fluid"></a> 
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/ledesmaMarca.svg" class="img-fluid"></a> 
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/ledesmaMarca.svg" class="img-fluid"></a> 
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/ledesmaMarca.svg" class="img-fluid"></a> 
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/ledesmaMarca.svg" class="img-fluid"></a>                                   
             </section>
         <!-- SECCION ULTIMOS INGRESOS -->
-        <section class="ultimosBoton">
-            <section class="ultimosTexto">
-                <H4>ULTIMOS INGRESOS</H4>
+        
+            <section class="ultimosBoton">
+                <section class="ultimosTitulo">
+                    <H4>ULTIMOS INGRESOS</H4>
+                </section>
+            </section>          
+            <section class="ultimosIngresos row justify-content-between text-center">  
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
+                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>                
             </section>
-        </section>    
-        <section ultimos ingresos class="ultimosIngresos"> 
-            <a href="#"><img src="./assets/img/permanen.png"/></a>
-            <a href="#"><img src="./assets/img/permanen.png"/></a>
-            <a href="#"><img src="./assets/img/permanen.png"/></a>
-            <a href="#"><img src="./assets/img/permanen.png"/></a>
-            <a href="#"><img src="./assets/img/permanen.png"/></a>
-            <a href="#"><img src="./assets/img/permanen.png"/></a>                
-        </section>
         
         <!-- SECCION UBICACION -->
         <section class="ubicacionBoton"> 
@@ -103,50 +150,45 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7816.266761048635!2d-58.517662879873114!3d-34.54506365023456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fd57e9a21f894c9!2sFRANPAPEL+-+Librer%C3%ADa+Mayorista!5e0!3m2!1sen!2sar!4v1539886785942" class="map" ></iframe>
         </section>
         <!-- SECCION FORMULARIO CONTACTO -->
-        
-        <section class="contactoBoton"> 
-            <section class="contactoTexto">
-                <H4>CONTACTO</H4> 
-            </section>
-        </section>
-        <section class="formularioContactoSeccion">
-            <form class="formularioContacto">
-                <div class="formularioNombre">
-                    <label for="name">NOMBRE:</label>
-                    <input id="name" type="text" name="nombre">
-                </div>
-                <div class="formularioEmail">
-                    <label for="email">EMAIL:</label>
-                    <input id="email" type="text" name="email">
-                </div>
-                <div class="formularioTelefono">
-                    <label for="asunto">TELEFONO:</label>
-                    <input id="subject" type="number" name="telefono">
-                </div>
-                <div class="formularioMensaje">
-                    <label id="contect" for="content">MENSAJE</label>
-                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-                    <button type="submit">ENVIAR</button>
-    
-                </div>
+            <section class="contact-form">
+            <form method="post">
+                <h3>CONTACTO</h3>
+               <section class="row justify-content-between">
+                    <section class="col-md-6">
+                        <section class="form-group">
+                            <input type="text" name="nombreContacto" class="form-control" placeholder="Nombre y Apellido *" value="" />
+                        </section>
+                        <section class="form-group">
+                            <input type="text" name="emailContacto" class="form-control" placeholder="Email *" value="" />
+                        </section>
+                        <section class="form-group">
+                            <input type="text" name="telefonoContacto" class="form-control" placeholder="Telefono *" value="" />
+                        </section>
+                        <section class="form-group">
+                            <input type="submit" name="botonContacto" class="btnContact" value="Enviar" />
+                        </section>
+                    </section>
+                    <section class="col-md-6">
+                        <section class="form-group">
+                            <textarea name="mensajeContacto" class="form-control" placeholder="Mensaje *" style="width: 100%; height: 150px;"></textarea>
+                        </section>
+                    </section>
+                </section>
             </form>
         </section>
     </main>    
     <!-- SECCION FOOTER -->    
-    <footer class="footer">
-        <!-- SECCION FOOTER IZQUIERDA -->  
-
-        <!-- SECCION FOOTER MEDIO -->  
-        <section class="ftmid">
-            <span>© Copyright 2022 FRANPAPEL SRL</span>
-            <span>Todos los derechos reservados</span>
-        </section>
-        <!-- SECCION FOOTER DERECHA -->  
-        <section class="redes">
-            <a href="#"><img src="./assets/img/fb.svg"/></a>
-            <a href="#"><img src="./assets/img/ig.svg"/></a>
+    <footer class="footer container-fluid">
+        <section class="footerContenedor">
+            <span>© Copyright 2022 FRANPAPEL SRL - Todos los derechos reservados</span>
+            <div>
+                <i class="fa-brands fa-facebook" style="color: red;"></i>
+                <i class="fa-brands fa-instagram" style="color: red;"></i>
+            </div>
         </section>
     </footer>   
+    <!-- BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- ANIMACION JS -->  
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script>

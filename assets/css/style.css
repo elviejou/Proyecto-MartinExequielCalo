@@ -11,16 +11,16 @@ a{
 
 .contenedor{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows:   auto auto auto auto auto auto;
-  grid-template-areas: "menu menu menu menu menu menu"
-                       "main   main    main   main main main"
-                       "footer footer  footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:   auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: "menu menu menu menu menu menu menu menu menu menu menu menu"
+                       "main main main main main main main main main main main main"
+                       "footer footer  footer footer footer footer footer footer  footer footer footer footer";
 }
 
 
 /* MENU */
-.menu{
+.navbar {
   grid-area: menu;
   background-color: beige;
   display: flex;
@@ -28,7 +28,7 @@ a{
 
 }
 
-
+/*
 nav ul{
   display: flex;
   font-size: 24px;
@@ -46,7 +46,7 @@ nav ul li a{
 nav ul li a:hover{
   transform: scale(1.1);
 }
-/* LOGO */
+ LOGO 
 
 nav ul li img{
   display: flex;
@@ -59,12 +59,19 @@ nav ul li img{
  font-size: 24px;
   color: red;
 }
-
+*/
 .logo{
   display: flex;
   width: 293px;
  
 }
+
+.tienda a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  }
 
  .tienda {
   display: flex;
@@ -80,18 +87,14 @@ nav ul li img{
   }
   .tienda:hover{
     transform: scale(1.1);
-    background-color: rgb(161, 156, 156);
+    background-color: rgb(252, 145, 145);
     color: black;
   }
 
 
 
   /* BANNER */
-.main{
-grid-area: main;
-display: flex;
-flex-direction: column;
-}
+
 
 .banner{
 display: flex;
@@ -102,119 +105,53 @@ flex-direction: column;
 
 /* SERVICIOS */
 
-.servicios {
 
+/* CARROUSEL MARCAS */
+.marcasBoton{
+  display: flex;
+  width: auto;
+  justify-content: center;
+  background-color: white;
+}
+.marcasTitulo{
+  display: flex;
+  width: 250PX;
+  font-size: 26px;
+  justify-content: center;
+  background-color: #FCE373;
+  }
+.marcasCarrousel { 
+     background: #FCE373;
+  }
+.marcasCarrousel img:hover{
+  transform: scale(1.2);
+}
+/* ULTIMOS INGRESOS */
+.ultimosBoton{
+  display: flex;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-
-    
+  justify-content: center;
+  background-color: #FCE373;
 }
-.servicioEnvios{
-  width: auto;
+.ultimosTitulo{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-}
-.servicioDescuento{
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-} 
-.servicioContacto{
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-}
-.servicioMarcas{
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-  /* CARROUSEL MARCAS */
-  .marcasBoton{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-  }
-  .marcasTitulo{
-    display: flex;
-    width: 250PX;
-    font-size: 26px;
-    justify-content: center;
-    background-color: #FCE373;
-    }
-  .marcasCarrousel { 
-    width: 100%;
-    display: flex;
-    background: #FCE373;
-    justify-content: space-between;
-    padding: 20px;
-  }
-
-  .marcasCarrousel img { 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  
-  }
-  .marcasCarrousel img:hover{
-    transform: scale(1.2);
-  }
-
-
-
-  /* ULTIMOS INGRESOS */
-  .ultimosBoton{
-    display: flex;
-    justify-content: center;
-    background-color: #FCE373;
-  }
-  .ultimosTexto{
-    display: flex;
-    width: 250PX;
-    font-size: 26px;
-    justify-content: center;
-    background-color:#E9DCFF;
+  width: 250PX;
+  font-size: 26px;
+  justify-content: center;
+  background-color: #E9DCFF;
   }
 .ultimosIngresos { 
-  width: auto;
-  display: flex;
-  background: #E9DCFF;
-  justify-content: space-between;
   padding: 20px;
-
-}
-.ultimosIngresos a img { 
-  width: 100%;
-  display: flex;
   background: #E9DCFF;
-  justify-content: space-between;
-  padding: 20px;
-}
+  }
 .ultimosIngresos img:hover{
   transform: scale(1.2);
 }
-
- /* UBICACIÓN */
- .ubicacionBoton{
-  display: flex;
-  justify-content: center;
-  background-color: #E9DCFF;
+/* UBICACIÓN */
+.ubicacionBoton{
+display: flex;
+justify-content: center;
+background-color: #E9DCFF;
 }
  .ubicacionTexto{
   display: flex;
@@ -228,7 +165,7 @@ flex-direction: column;
   display: flex;
   background: #A2D6E7;
   justify-content: space-between;
-  padding: 20px;
+  padding: 30px;
 }
 
 .map{
@@ -238,96 +175,65 @@ flex-direction: column;
 
 
  /* FORMULARIO CONTACTO */
- .contactoBoton{
-  display: flex;
-  justify-content: center;
-  background-color: #A2D6E7;
+ .contact-form{
+  background: rgb(243, 119, 119);
+  width: 100%;
 }
- .contactoTexto{
-  display: flex;
-  width: 250PX;
-  font-size: 26px;
-  justify-content: center;
-  color: white;
-  background-color: #f70404;
-  }
- .formularioContactoSeccion {
-  display: flex;
-  font-size: 22px;
-  color: white;
-  flex-direction: column;
-  background: #f70404;
-  text-align: center;
-  }
-  .formularioContactoSeccion text {
-    display: flex;
-    
-    text-align: center;
-    }
-  .formularioContacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  }
-  .formularioNombre {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  }
-  .formularioEmail{
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  }
-  .formularioTelefono{
-    display: flex;
-    justify-content: center;
-    margin: 20px;  
-  }
-  .formularioMensaje{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;  
-  }
-  .formularioMensaje textarea {
-    width: 100%;
-    display: flex
-  ;
-  }
-  .formularioMensaje  button {
-    display: flex;
-    width: 250px;
-    font-size: 22px;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    background: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
 
-  }
+.contact-form .form-control{
+  border-radius:16px;
+  margin: 10px;
+}
+.contact-image{
+  text-align: center;
+}
+
+.contact-form form{
+  padding: 14%;
+}
+.contact-form form .row{
+  margin-bottom: -7%;
+}
+.contact-form h3{
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: white;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 16px;
+  padding: 1.5%;
+  background: #000000;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btnContactSubmit
+{
+  width: 50%;
+  border-radius: 10px;
+  padding: 1.6%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
 
 /* FOOTER */
-.footer{
+footer{
+  background-color: beige;
+}
+.footerContenedor {
   grid-area: footer;
   background-color: beige;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
-.redes img {
-  width: 50px;
-}
-.ftleft{
-  display: flex;
-  text-align: center;
-}
-.ftmid{
-  align-items: center;
-  font-size: 24px;
-  text-align: center;
-}
+
 
 /* CAMBIO DE PRECIOS*/
 .cambioDePrecios{
@@ -344,42 +250,32 @@ flex-direction: column;
 }
 
 
-
-.login {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.loginFormulario{
-  width: 50%;
-  margin: 20px;
-  padding: 20px;
-}
-.loginTitulo{
-  display: flex;
-  justify-content: center;
-  padding: 12px;
-  width: 100%;
-}
-.loginDatos{
-  display: flex;
-  font-size: 36px;
-  margin-bottom: 10px ;
-}
-.loginBtn{
-  background: #fb0606;
-  border: 1px solid #ddd;
-  color: #ffffff;
-  padding: 10px;
-  width: 100%;
-}
+/* PAGINA LOGIN*/
 
 
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  background-color: #FF0000 !important;
+}
 
+.btn-google {
+  color: white !important;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white !important;
+  background-color: #ea4335;
+}
 
 /* PAGINA TIENDA */
 
+.tituloTienda{
+  text-align: center;
+  background-color: rgb(255, 174, 174);
+}
 
 /* SIDE BAR */
 .categoriasYfiltros {
@@ -484,308 +380,11 @@ text-decoration: none;
 
 @media(max-width:576px){
 
-  .menu{
+  .footerContenedor {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%
-  }
-  
-  .slogan{
-   display: none;
-  }
-  .menu ul:nth-child(2){  
-      display: flex;
-      flex-wrap: nowrap;
-      order: 3;
-  }
-  .logoMenu{
-    display: flex;
-    order:1;
-  }
-  .menu ul:nth-child(4){
-    display: flex;
-    order: 4;
-  }  
-  .tienda{
-    display: flex;
-    flex-direction: column;
-    order: 2;
-  }
-  .banner{
-    display: flex;
-  }
-  .servicios{
-    display: flex;
-    flex-direction: column;
-  }
-  .marcasCarrousel a:nth-child(6) { 
-    display: none;
-  }
-  .marcasCarrousel a:nth-child(5) { 
-    display: none;
-  }
-  .ultimosIngresos a:nth-child(6) { 
-    display: none;
-  }
-  .ultimosIngresos a:nth-child(5) { 
-    display: none;
-  }
-  .ftleft{
-    display: hidden;
-  }
-  .footer{
-    display: flex;
+    text-align: center;
     justify-content: center;
     width: 100%;
+    font-size: 16px;
   }
-  .nosotrosPage{
-x    width: auto;
-  }
-  .login{
-    width: auto;
-  }
-  .cambioDePrecios{
-    width: auto;
-  }
-  .shop{
-    width: auto;
-    justify-content: center;
-  }
-
-
-}  
-@media(min-width:576px){
-
-  .menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%
-  }
-  .slogan{
-   display: flex;
-   align-items: center;
-   order: 0;
-  }
-  .menu ul:nth-child(2){  
-      display: flex;
-      flex-wrap: nowrap;
-      order: 3;
-  }
-  .logoMenu{
-    display: flex;
-    order:1;
-  }
-  .menu ul:nth-child(4){
-    display: flex;
-    order: 4;
-  }  
-  .tienda{
-    display: flex;
-    flex-direction: column;
-    order: 2;
-  }
-  .banner{
-    display: flex;
-  }
-  .marcasCarrousel a:nth-child(6) { 
-    display: none;
-  }
-  .marcasCarrousel a:nth-child(5) { 
-    display: none;
-  }
-  .ultimosIngresos a:nth-child(6) { 
-    display: none;
-  }
-  .ultimosIngresos a:nth-child(5) { 
-    display: none;
-  }
-  .ftleft{
-    display: hidden;
-  }
-  .footer{
-    display: flex;
-    justify-content: center;
-    width: 100%
-  }
-  .nosotrosPage{
-    width: auto;
-  }
-  .login{
-    width: auto;
-  }
-  .cambioDePrecios{
-    width: auto;
-  }
-  .shop{
-    width: auto;
-  }
-
 }
-  @media(min-width:768px){
-
-    .menu{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%
-    }
-    .slogan{
-     display: flex;
-     align-items: center;
-     order: 0;
-    }
-    .menu ul:nth-child(2){  
-        display: flex;
-        flex-wrap: nowrap;
-        order: 3;
-    }
-    .logoMenu{
-      display: flex;
-      order:1;
-    }
-    .menu ul:nth-child(4){
-      display: flex;
-      order: 4;
-    }  
-    .tienda{
-      display: flex;
-      flex-direction: column;
-      order: 2;
-    }
-  .banner{
-    display: flex;
-  }
-  .marcasCarrousel a:nth-child(6) { 
-    display: none;
-  }
-  .ultimosIngresos a:nth-child(6) { 
-    display: none;
-  }
-  .ftleft{
-    display: hidden;
-  }
-  .footer{
-    display: flex;
-    justify-content: center;
-    width: 100%
-  }
-  .nosotrosPage{
-    width: auto;
-  }
-  .login{
-    width: auto;
-  }
-  .cambioDePrecios{
-    width: auto;
-  }
-  .shop{
-    width: auto;
-  }
-
-  }
-    @media(min-width:992px){
-    .menu{
-        display: flex;
-        justify-content: space-between;
-        width: 100%
-      }
-      .slogan{
-       display: none;
-      }
-      .menu ul:nth-child(2){
-          order:2;
-      }
-      .logoMenu{
-        display: flex;
-        order:1;
-      }
-      .menu ul:nth-child(4){
-        order: 3;
-    }  
-      .tienda{
-        order: 4;
-      }
-    .banner{
-      display: flex;
-    }
-    .footer{
-      display: flex;
-      justify-content: space-between;
-      width: 100%
-    }
-    .ftleft{
-      display: hidden;
-    }
-    .marcasCarrousel a:nth-child(6) { 
-    display: none;
-  }
-  .nosotrosPage{
-    width: auto;
-  }
-  .login{
-    width: auto;
-  }
-  .cambioDePrecios{
-    width: auto;
-  }
-  .shop{
-    width: auto;
-  }
-  }  
-      @media(min-width:1200px){
-      
-        .menu{
-          display: flex;
-          justify-content: space-between;
-          width: 100%;
-        }
-        .slogan{
-        display: flex;
-        }
-        .menu img{
-          width: 300px;
-        }
-        .menu ul:nth-child(2){
-            order:1;
-        }
-        .logoMenu{
-          order:2;  
-        }
-        .menu ul:nth-child(4){
-          order: 3;
-      }  
-        .tienda{
-          order: 4;
-        }
-      .banner{
-        display: flex;
-      }
-      .footer{
-        display: flex;
-        justify-content: space-between;
-        width: 100%
-      }
-      .nosotrosPage{
-        width: auto;
-      }
-      .login{
-        width: auto;
-      }
-      .cambioDePrecios{
-        width: auto;
-      }
-      .shop{
-        width: auto;
-      }
-
-    }  
-
-
-
-
-
