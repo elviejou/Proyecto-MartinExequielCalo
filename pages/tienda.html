@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- LINK EFECTOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ruda&display=swap" rel="stylesheet" />
@@ -17,298 +17,296 @@
 </head>
 <body class="container-fluid justify-content-between">
     <!-- MENU -->
-    <nav class="navbar navbar-expand-lg bg-light" style="background-color: beige !important;">
-        <section class="container-fluid">
-            <!-- LOGO -->
-          <a class="navbar-brand col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2" href="../index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <section class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <!-- LINK NOSOTROS-->
-                <li class="nav-item">
-                    <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
-                </li>
-                <!-- LINK CAMBIO DE PRECIOS-->
-                <li class="nav-item">
-                    <a class="nav-link" href="./precios.html">PRECIOS</a>
-                </li>
-                <!-- LINK CONTACTO-->
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html#contacto">CONTACTO</a>
-                </li>
-                <!-- LINK LOGIN-->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    LOGIN
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./login.html">INGRESAR</a></li>
-                    <li><a class="dropdown-item" href="#">REGISTRARSE</a></li>
-                    <li><hr class="dropdown-sectionider"></li>
-                    <li><a class="dropdown-item" href="#">MI CUENTA</a></li>
-                    </ul>
-                </li> 
-            </ul>
-            <!-- BUSCADOR -->  
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar Productos..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </form>
-            <!-- LINK TIENDA-->  
-            <section class="tienda justify-content-center align-content-center">
-                <a class="nav-link fa-solid fa-basket-shopping" href="./tienda.html"></a>TIENDA
-            </section> 
-          </section>
+    <nav class="navbar sticky-top navbar-expand-lg bg-light" style="background-color: beige !important;">
+      <section class="container-fluid">
+          <!-- LOGO -->
+        <a class="navbar-brand col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2" href="./index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <section class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- LINK NOSOTROS-->
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">NOSOTROS</a>
+              </li>
+              <!-- LINK CAMBIO DE PRECIOS-->
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/precios.html">PRECIOS</a>
+              </li>
+              <!-- LINK CONTACTO-->
+              <li class="nav-item">
+                  <a class="nav-link" href="#contacto">CONTACTO</a>
+              </li>
+              <!-- LINK LOGIN-->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  LOGIN
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./pages/login.html">INGRESAR</a></li>
+                  <li><a class="dropdown-item" href="#">REGISTRARSE</a></li>
+                  <li><hr class="dropdown-sectionider"></li>
+                  <li><a class="dropdown-item" href="#">MI CUENTA</a></li>
+                  </ul>
+              </li> 
+          </ul>
+          <!-- LINK TIENDA-->  
+          <section class="tienda justify-content-center align-content-center">
+              <a href="./pages/tienda.html">TIENDA</a>
+          </section> 
         </section>
-      </nav>
-    <main class="main">
+      </section>
+    </nav>
+    <main>
          <!-- TIENDA -->
-         <section class="tituloTienda">
-         <h2>TODOS LOS PRECIOS INCLUYEN IVA</h2>
-         <p>Los precios pueden modificarse sin previo aviso</p>
-        </section>
-           <!-- FILTROS Y CATEGRIAS -->
-         <nav class="navbar bg-light fixed-left  sticky-top " style="background-color: white !important;">
+         <section class="paginaTienda">
+          <Section class="menuTienda">
+            <section class="tituloTienda">
+              <h2>TODOS LOS PRECIOS INCLUYEN IVA</h2>
+              <p>Los precios pueden modificarse sin previo aviso</p>
+            </section>
+              <!-- FILTROS Y CATEGRIAS -->
+            <nav class="navbar bg-light fixed-left  sticky-top " style="background-color: white !important;">
 
-          <div class="container-fluid justify-content-start">
-            <a class="navbar-brand" href="#">Filtros y Categorias</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Filtros</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <div class="container-fluid justify-content-start">
+                <a class="navbar-brand" href="#">Filtros y Categorias</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Filtros</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <!-- CATEGORIA 1 -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Escolar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                          <li><a class="dropdown-item" href="#">Adhesivos</a></li>
+                          <li><a class="dropdown-item" href="#">Carpetas</a></li>
+                          <li><a class="dropdown-item" href="#">Cartucheras</a></li>
+                          <li><a class="dropdown-item" href="#">Lapices</a></li>
+                          <li><a class="dropdown-item" href="#">Marcadores</a></li>
+                          <li><a class="dropdown-item" href="#">Papeles</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Mas....</a></li>
+                        </ul>
+                      </li>
+                      <!-- CATEGORIA 2 -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Comercial
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                          <li><a class="dropdown-item" href="#">Abrochadoras</a></li>
+                          <li><a class="dropdown-item" href="#">Boligrafos</a></li>
+                          <li><a class="dropdown-item" href="#">Marcadores</a></li>
+                          <li><a class="dropdown-item" href="#">Oficina</a></li>
+                          <li><a class="dropdown-item" href="#">Papeles</a></li>
+                          <li><a class="dropdown-item" href="#">Resmas</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Mas....</a></li>
+                        </ul>
+                      </li>
+                      <!-- CATEGORIA 3 -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Técninca
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                          <li><a class="dropdown-item" href="#">Calitecno</a></li>
+                          <li><a class="dropdown-item" href="#">Compas</a></li>
+                          <li><a class="dropdown-item" href="#">Gomas</a></li>
+                          <li><a class="dropdown-item" href="#">Lapices</a></li>
+                          <li><a class="dropdown-item" href="#">Letrografos</a></li>
+                          <li><a class="dropdown-item" href="#">Portaminas</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Mas....</a></li>
+                        </ul>
+                      </li>
+                      <!-- CATEGORIA 4 -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Informática
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                          <li><a class="dropdown-item" href="#">Auriculares</a></li>
+                          <li><a class="dropdown-item" href="#">CD / DVD</a></li>
+                          <li><a class="dropdown-item" href="#">Memorias</a></li>
+                          <li><a class="dropdown-item" href="#">Mouse</a></li>
+                          <li><a class="dropdown-item" href="#">Teclados</a></li>
+                          <li><a class="dropdown-item" href="#">Pendrives</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Mas....</a></li>
+                        </ul>
+                      </li>
+                      <!-- CATEGORIA 5 -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Regalería
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                          <li><a class="dropdown-item" href="#">Cintas</a></li>
+                          <li><a class="dropdown-item" href="#">Cuadernos</a></li>
+                          <li><a class="dropdown-item" href="#">Didacticos</a></li>
+                          <li><a class="dropdown-item" href="#">Juegos de Mesa</a></li>
+                          <li><a class="dropdown-item" href="#">Libretas</a></li>
+                          <li><a class="dropdown-item" href="#">Slime</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Mas....</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                    
+                  </div>
+                </div>
               </div>
-              <div class="offcanvas-body">
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <!-- CATEGORIA 1 -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Escolar
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                      <li><a class="dropdown-item" href="#">Adhesivos</a></li>
-                      <li><a class="dropdown-item" href="#">Carpetas</a></li>
-                      <li><a class="dropdown-item" href="#">Cartucheras</a></li>
-                      <li><a class="dropdown-item" href="#">Lapices</a></li>
-                      <li><a class="dropdown-item" href="#">Marcadores</a></li>
-                      <li><a class="dropdown-item" href="#">Papeles</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Mas....</a></li>
-                    </ul>
-                  </li>
-                  <!-- CATEGORIA 2 -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Comercial
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                      <li><a class="dropdown-item" href="#">Abrochadoras</a></li>
-                      <li><a class="dropdown-item" href="#">Boligrafos</a></li>
-                      <li><a class="dropdown-item" href="#">Marcadores</a></li>
-                      <li><a class="dropdown-item" href="#">Oficina</a></li>
-                      <li><a class="dropdown-item" href="#">Papeles</a></li>
-                      <li><a class="dropdown-item" href="#">Resmas</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Mas....</a></li>
-                    </ul>
-                  </li>
-                  <!-- CATEGORIA 3 -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Técninca
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                      <li><a class="dropdown-item" href="#">Calitecno</a></li>
-                      <li><a class="dropdown-item" href="#">Compas</a></li>
-                      <li><a class="dropdown-item" href="#">Gomas</a></li>
-                      <li><a class="dropdown-item" href="#">Lapices</a></li>
-                      <li><a class="dropdown-item" href="#">Letrografos</a></li>
-                      <li><a class="dropdown-item" href="#">Portaminas</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Mas....</a></li>
-                    </ul>
-                  </li>
-                  <!-- CATEGORIA 4 -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Informática
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                      <li><a class="dropdown-item" href="#">Auriculares</a></li>
-                      <li><a class="dropdown-item" href="#">CD / DVD</a></li>
-                      <li><a class="dropdown-item" href="#">Memorias</a></li>
-                      <li><a class="dropdown-item" href="#">Mouse</a></li>
-                      <li><a class="dropdown-item" href="#">Teclados</a></li>
-                      <li><a class="dropdown-item" href="#">Pendrives</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Mas....</a></li>
-                    </ul>
-                  </li>
-                  <!-- CATEGORIA 5 -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Regalería
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                      <li><a class="dropdown-item" href="#">Cintas</a></li>
-                      <li><a class="dropdown-item" href="#">Cuadernos</a></li>
-                      <li><a class="dropdown-item" href="#">Didacticos</a></li>
-                      <li><a class="dropdown-item" href="#">Juegos de Mesa</a></li>
-                      <li><a class="dropdown-item" href="#">Libretas</a></li>
-                      <li><a class="dropdown-item" href="#">Slime</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Mas....</a></li>
-                    </ul>
-                  </li>
-                  
-                </ul>
-                
-              </div>
-            </div>
-          </div>
-        </nav>
-
-        <section class="shop">
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                    <img src="../assets/img/permanen.png" alt="">
-                    <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                    <span  class="precioProductos">$128.99 IVA inc*</span>
-                    <span  class="codigoProductos">cod: 1973837</span>
-                    <div class="agregarAlCarrito">
-                    <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-                    </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-            <!-- CONTENEDOR DE PRODUCTOS -->
-            <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-              <img src="../assets/img/permanen.png" alt="">
-              <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-              <span  class="precioProductos">$128.99 IVA inc*</span>
-              <span  class="codigoProductos">cod: 1973837</span>
-              <div class="agregarAlCarrito">
-              <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-              </div>      
-            </div> 
-          
-        </section> 
+            </nav>
+          </Section>
+            <section class="shop">
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                        <img src="../assets/img/permanen.png" alt="">
+                        <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                        <span  class="precioProductos">$128.99 IVA inc*</span>
+                        <span  class="codigoProductos">cod: 1973837</span>
+                        <div class="agregarAlCarrito">
+                        <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                        </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
+                  <span  class="precioProductos">$128.99 IVA inc*</span>
+                  <span  class="codigoProductos">cod: 1973837</span>
+                  <div class="agregarAlCarrito">
+                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  </div>      
+                </div> 
+              
+            </section> 
+      </section>  
     </main>
         <!-- SECCION FOOTER -->    
         <footer class="footer container-fluid">

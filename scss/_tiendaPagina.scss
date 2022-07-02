@@ -1,0 +1,119 @@
+/* PAGINA TIENDA */
+
+.paginaTienda{
+
+
+  .menuTienda{
+
+
+    .tituloTienda{
+      text-align: center;
+      background-color: $colorRojoClaro;
+    }
+    
+    
+    /* MENU DESPEGABLE */
+    .categoriasYfiltros {
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      width: 200px;
+      font-size: 18px;
+
+      ul li {
+        text-decoration: none;
+        list-style: none;
+        text-decoration: none;
+
+
+        &:hover {
+          color: $colorBlanco;
+          background-color: $colorRojo;
+          border-radius: 3px;
+        }
+      }
+    }
+    
+  }
+  .shop{
+      margin: 30px;
+      width: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+
+      /* CONTENEDOR PRODUCTOS*/
+    .contenedorProductos { 
+      width:259px;
+      height:472px;
+      display: flex;
+      width: auto;
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+
+
+      img { 
+        width: 207px;
+        height:241px;
+
+
+        &:hover{
+          transform: scale(1.2);
+        }
+    
+      }
+
+
+      .nombreProductos { 
+        color:rgba(25.000000409781933, 25.000000409781933, 29.000000171363354, 1);
+        width:227px;
+        text-align:center;
+        font-size:20px;
+      }
+
+
+      .precioProductos { 
+        color: $colorRojo;
+        width:227px;
+        text-align:center;
+        font-size: 20px;
+      }
+
+
+      .codigoProductos { 
+        color:$colorNegro;
+        width:227px;
+        height:21px;
+        text-align:center;
+        font-size:14px;
+    
+      }
+      .agregarAlCarrito{
+          width:227px;
+          height:21px;
+          text-align:center;
+        }
+
+
+      .botonAgregar{
+          background-color:$colorRojo;
+          color: $colorBlanco;
+          width: 90px;;
+          height:28px;
+      }
+
+
+      .agregarCantidad { 
+      
+          width:40px;
+          margin-top:5px;
+          height:28px;
+      }
+
+
+    }
+  }
+}    

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- LINK EFECTOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ruda&display=swap" rel="stylesheet" />
@@ -58,7 +58,7 @@
           </section>
         </section>
       </nav>
-   
+ 
     <main class="main container-fluid">
         <!-- SECCION BANNER -->
         <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -82,35 +82,37 @@
               <span class="visually-hidden">Next</span>
             </button>
           </section>
-   
-      
+         
         <!-- SECCION SERVICIOS -->
-        <section class="row justify-content-between text-center">
-            <section class="servicioEnvios col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./assets/img/delivery.svg" class="envioImg">
-                <h3 class="">Envíos a todo el País</h3>
-                <small>Sin Cargo en CABA y GBA</small>
-            </section>
-            <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./assets/img/descuento.svg" >
-                <h3>Precios Especiales</h3>
-                <small>El mayor surtido</small>
-                <small>al mejor precio</small>
-            </section>
-            <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./assets/img/atenci.svg" >
-                <h3>Contactanos</h3>
-                <small>Tenemos los mejores</small>
-                <small>Asesores del Rubro</small>
-            </section>
-            <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./assets/img/marcas.svg" >
-                <h3>Marcas</h3>
-                <small>Todas las Marca</small>
+        <section class="mainServicios">
+            <section class="row justify-content-between text-center">
+                <section class="servicioEnvios col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="./assets/img/delivery.svg" class="envioImg">
+                    <h3 class="">Envíos a todo el País</h3>
+                    <small>Sin Cargo en CABA y GBA</small>
+                </section>
+                <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="./assets/img/descuento.svg" >
+                    <h3>Precios Especiales</h3>
+                    <small>El mayor surtido</small>
+                    <small>al mejor precio</small>
+                </section>
+                <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="./assets/img/atenci.svg" >
+                    <h3>Contactanos</h3>
+                    <small>Tenemos los mejores</small>
+                    <small>Asesores del Rubro</small>
+                </section>
+                <section class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="./assets/img/marcas.svg" >
+                    <h3>Marcas</h3>
+                    <small>Todas las Marca</small>
+                </section>
             </section>
         </section>
        
         <!-- SECCION MARCAS -->
+        <section class="mainMarcas">
             <section class="marcasBoton">
                 <section class="marcasTitulo">
                     <H4>MARCAS</H4>
@@ -124,8 +126,10 @@
                 <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/ledesmaMarca.svg" class="img-fluid"></a> 
                 <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/ledesmaMarca.svg" class="img-fluid"></a>                                   
             </section>
-        <!-- SECCION ULTIMOS INGRESOS -->
+        </section>    
         
+        <!-- SECCION ULTIMOS INGRESOS -->
+        <section class="mainUltimosIngresos">
             <section class="ultimosBoton">
                 <section class="ultimosTitulo">
                     <H4>ULTIMOS INGRESOS</H4>
@@ -139,42 +143,48 @@
                 <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
                 <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>                
             </section>
+        </section>    
         
         <!-- SECCION UBICACION -->
-        <section class="ubicacionBoton"> 
-            <section class="ubicacionTexto">
-                <H4>UBICACIÓN</H4> 
+        <section class="mainUbicacion" >
+            <section class="ubicacionBoton"> 
+                <section class="ubicacionTexto">
+                    <H4>UBICACIÓN</H4> 
+                </section>
+            </section>
+            <section class="ubicacionMapa"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7816.266761048635!2d-58.517662879873114!3d-34.54506365023456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fd57e9a21f894c9!2sFRANPAPEL+-+Librer%C3%ADa+Mayorista!5e0!3m2!1sen!2sar!4v1539886785942" class="map" ></iframe>
             </section>
         </section>
-        <section class="ubicacionMapa"> 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7816.266761048635!2d-58.517662879873114!3d-34.54506365023456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fd57e9a21f894c9!2sFRANPAPEL+-+Librer%C3%ADa+Mayorista!5e0!3m2!1sen!2sar!4v1539886785942" class="map" ></iframe>
-        </section>
+
         <!-- SECCION FORMULARIO CONTACTO -->
+        <section class="mainContacto" >
             <section class="contact-form">
-            <form method="post">
-                <h3>CONTACTO</h3>
-               <section class="row justify-content-between">
-                    <section class="col-md-6">
-                        <section class="form-group">
-                            <input type="text" name="nombreContacto" class="form-control" placeholder="Nombre y Apellido *" value="" />
+                <form method="post">
+                    <h3>CONTACTO</h3>
+                <section class="row justify-content-between">
+                        <section class="col-md-6">
+                            <section class="form-group">
+                                <input type="text" name="nombreContacto" class="form-control" placeholder="Nombre y Apellido *" value="" />
+                            </section>
+                            <section class="form-group">
+                                <input type="text" name="emailContacto" class="form-control" placeholder="Email *" value="" />
+                            </section>
+                            <section class="form-group">
+                                <input type="text" name="telefonoContacto" class="form-control" placeholder="Telefono *" value="" />
+                            </section>
+                            <section class="form-group">
+                                <input type="submit" name="botonContacto" class="btnContact" value="Enviar" />
+                            </section>
                         </section>
-                        <section class="form-group">
-                            <input type="text" name="emailContacto" class="form-control" placeholder="Email *" value="" />
-                        </section>
-                        <section class="form-group">
-                            <input type="text" name="telefonoContacto" class="form-control" placeholder="Telefono *" value="" />
-                        </section>
-                        <section class="form-group">
-                            <input type="submit" name="botonContacto" class="btnContact" value="Enviar" />
+                        <section class="col-md-6">
+                            <section class="form-group">
+                                <textarea name="mensajeContacto" class="form-control" placeholder="Mensaje *" style="width: 100%; height: 150px;"></textarea>
+                            </section>
                         </section>
                     </section>
-                    <section class="col-md-6">
-                        <section class="form-group">
-                            <textarea name="mensajeContacto" class="form-control" placeholder="Mensaje *" style="width: 100%; height: 150px;"></textarea>
-                        </section>
-                    </section>
-                </section>
-            </form>
+                </form>
+            </section>
         </section>
     </main>    
     <!-- SECCION FOOTER -->    

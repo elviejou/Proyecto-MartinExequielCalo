@@ -1,0 +1,40 @@
+/* UBICACIÓN */
+
+.mainUbicacion{
+
+
+    .ubicacionBoton{
+        display: flex;
+        justify-content: center;
+        background-color: #E9DCFF;
+
+
+        .ubicacionTexto{
+            display: flex;
+            width: 250PX;
+            font-size: 26px;
+            justify-content: center;
+            background-color: #A2D6E7;
+          }
+    }
+
+
+
+    .ubicacionMapa { 
+      width: 100%;
+      display: flex;
+      background: #A2D6E7;
+      justify-content: space-between;
+      padding: 30px;
+
+
+      .map{
+        display: flex;
+        width: 100%;
+      }
+    }   
+    
+
+}
+  
+    

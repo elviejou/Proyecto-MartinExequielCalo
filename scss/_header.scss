@@ -1,0 +1,55 @@
+/* MENU */
+
+
+.navbar {
+    grid-area: menu;
+    background-color: beige;
+    display: flex;
+    width: auto;
+
+    .logo{
+        display: flex;
+        width: 293px;
+    }
+    
+    
+    .tienda {
+        display: flex;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 40px;
+        background: $colorRojo;
+        border-radius: 5px;
+        font-size: 25px;
+    
+        &:hover{
+            transform: scale(1.1);
+            background-color: $colorBlanco;
+        }
+
+        
+        a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: $colorBlanco;
+            
+            
+            &:hover{
+                transform: scale(1.1);
+                color: $colorRojo;
+            }    
+            
+        }  
+    }
+  
+}
+    
+
+
+  
+   
+ 
+  

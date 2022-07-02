@@ -1,0 +1,32 @@
+/* ULTIMOS INGRESOS */
+
+.mainUltimosIngresos{
+
+    
+    .ultimosBoton{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: $colorAmarillo;
+
+
+        .ultimosTitulo{
+            display: flex;
+            width: 250PX;
+            font-size: 26px;
+            justify-content: center;
+            background-color: $colorLilaPastel;
+        }
+    }
+
+
+    .ultimosIngresos a{ 
+        padding: 20px;
+        background: $colorLilaPastel;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    } 
+
+}

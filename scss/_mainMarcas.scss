@@ -1,0 +1,30 @@
+/* Seccion Marcas */
+
+.mainMarcas {
+
+  .marcasBoton{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    background-color: $colorBlanco;
+
+    .marcasTitulo{
+      display: flex;
+      width: 250PX;
+      font-size: 26px;
+      justify-content: center;
+      background-color: $colorAmarillo;
+    }
+  }
+
+
+  .marcasCarrousel a{
+    background: $colorAmarillo;  
+
+       
+    &:hover{
+      transform: scale(1.05);
+    }
+
+  }
+}
