@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="libreria, lapiz, lapices, cuaderno, boligrafo, birome, resma, lapicera, regaleria, regla, distribuidora, mayorista, repuesto, block, tijera, rivadavia, exito, avon, filgo, mooving">
     <link rel="stylesheet" href="../css/style.css">
     <!-- LINK EFECTOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,14 +14,14 @@
     <!-- LINK FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-    <title>Franpapel SRL - Mayorista en Librería</title>
+    <title>Tienda de Libreria - Franpapel</title>
 </head>
 <body class="container-fluid justify-content-between">
     <!-- MENU -->
     <nav class="navbar sticky-top navbar-expand-lg bg-light" style="background-color: beige !important;">
       <section class="container-fluid">
           <!-- LOGO -->
-        <a class="navbar-brand col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2" href="../index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"> </a>
+        <a class="navbar-brand col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2" href="../index.html"><img src="../assets/img/logo.png" alt="distribuidora mayorista de libreria" class="img-fluid"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,7 +54,7 @@
           </ul>
           <!-- LINK TIENDA-->  
           <section class="tienda justify-content-center align-content-center">
-              <a href="./pages/tienda.html">TIENDA</a>
+              <a href="./tienda.html">TIENDA</a>
           </section> 
         </section>
       </section>
@@ -63,8 +64,8 @@
          <section class="paginaTienda">
           <Section class="menuTienda">
             <section class="tituloTienda">
-              <h2>TODOS LOS PRECIOS INCLUYEN IVA</h2>
-              <p>Los precios pueden modificarse sin previo aviso</p>
+              <h2 class="preciosConIva">TODOS LOS PRECIOS INCLUYEN IVA</h2>
+              <p class="preciosModificables">Los precios pueden modificarse sin previo aviso</p>
             </section>
               <!-- FILTROS Y CATEGRIAS -->
             <nav class="navbar bg-light fixed-left  sticky-top " style="background-color: white !important;">
@@ -182,128 +183,154 @@
                 </div>
               </div>
             </nav>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Precios</li>
+              </ol>
+            </nav>
           </Section>
             <section class="shop">
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                        <img src="../assets/img/permanen.png" alt="">
-                        <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                        <span  class="precioProductos">$128.99 IVA inc*</span>
-                        <span  class="codigoProductos">cod: 1973837</span>
-                        <div class="agregarAlCarrito">
-                        <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
-                        </div>      
-                </div> 
-                <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
+                  </div>      
+                </div>                                                                                 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
                 <!-- CONTENEDOR DE PRODUCTOS -->
-                <div class= "contenedorProductos col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                   <img src="../assets/img/permanen.png" alt="">
-                  <h5  class="nombreProductos">Lapiz color Filgo Supersoft x 24</h5>
-                  <span  class="precioProductos">$128.99 IVA inc*</span>
-                  <span  class="codigoProductos">cod: 1973837</span>
-                  <div class="agregarAlCarrito">
-                  <input type="number" class="agregarCantidad" value="1"> <input type="button" value="Agregar" class="botonAgregar">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
                   </div>      
                 </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
+                  </div>      
+                </div> 
+                <!-- CONTENEDOR DE PRODUCTOS -->
+                <div class= "tarjeta2 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                  <img src="../assets/img/permanen.png" alt="">
+                  <h5>Lapiz color Filgo Supersoft x 24</h5>
+                  <span>$128.99 IVA inc*</span>
+                  <small>cod: 1973837</small>
+                  <div>
+                  <input type="number" value="1"> <input type="button" value="Agregar">
+                  </div>      
+                </div>                                                                 
               
             </section> 
       </section>  

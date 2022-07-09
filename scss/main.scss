@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    width: auto;
+}
 @import "variables";
 @import "header";
 @import "mainServicios";
@@ -16,6 +18,8 @@
 @import "cambioPrecios";
 @import "loginPagina";
 @import "tiendaPagina";
+@import "tiendaProductos";
+@import "mixins";
 
 
 

@@ -46,18 +46,19 @@
 
       /* CONTENEDOR PRODUCTOS*/
     .contenedorProductos { 
-      width:259px;
-      height:472px;
+      width:230px;
+      height:450px;
       display: flex;
-      width: auto;
       flex-direction: column;
-      align-content: center;
       text-align: center;
-
+      box-shadow: 1px 1px 12px 0 rgba(0,0,0,0.2);
+      margin: 10px;
 
       img { 
-        width: 207px;
-        height:241px;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-content: center;
 
 
         &:hover{
@@ -101,14 +102,14 @@
       .botonAgregar{
           background-color:$colorRojo;
           color: $colorBlanco;
-          width: 90px;;
+          width: 150px;;
           height:28px;
       }
 
 
       .agregarCantidad { 
       
-          width:40px;
+          width:80px;
           margin-top:5px;
           height:28px;
       }
