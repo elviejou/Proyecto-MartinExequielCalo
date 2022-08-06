@@ -2,7 +2,7 @@
 
 .mainUltimosIngresos {
     width: auto;
-    height: auto;
+    height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -35,14 +35,12 @@
     }
     .ultimosIngresos {
         display: flex;
-        height: 400px;
         justify-content: space-around;
         margin: 20px 0;
 
 
         .contenedorProductos { 
                 width: 227px;
-                height: 400px;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
@@ -97,4 +95,3 @@
     
 
 }
-

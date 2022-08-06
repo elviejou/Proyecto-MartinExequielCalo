@@ -82,7 +82,7 @@ body {
 /* ULTIMOS INGRESOS */
 .mainUltimosIngresos {
   width: auto;
-  height: auto;
+  height: 100%;
   flex-direction: row;
   flex-wrap: wrap; }
   .mainUltimosIngresos a {
@@ -103,12 +103,10 @@ body {
       background-color: #E9DCFF; }
   .mainUltimosIngresos .ultimosIngresos {
     display: flex;
-    height: 400px;
     justify-content: space-around;
     margin: 20px 0; }
     .mainUltimosIngresos .ultimosIngresos .contenedorProductos, .mainUltimosIngresos .ultimosIngresos .tarjeta2 {
       width: 227px;
-      height: 400px;
       display: flex;
       flex-direction: column;
       text-align: center;
