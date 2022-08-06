@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="libreria, lapiz, lapices, cuaderno, boligrafo, birome, resma, lapicera, regaleria, regla, distribuidora, mayorista, repuesto, block, tijera, rivadavia, exito, avon, filgo, mooving">
+    <meta name="keywords" content="libreria,agendas, mooving, lapiz, lapices, cuaderno, boligrafo, birome, resma, lapicera, regaleria, regla, distribuidora, mayorista, repuesto, block, tijera, rivadavia, exito, avon, filgo, mooving">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <!-- LINK EFECTOS -->
@@ -35,10 +35,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/precios.html">PRECIOS</a>
                 </li>
-                <!-- LINK CONTACTO-->
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
-                </li>
                 <!-- LINK LOGIN-->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,9 +42,8 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="./pages/login.html">INGRESAR</a></li>
-                    <li><a class="dropdown-item" href="#">REGISTRARSE</a></li>
                     <li><hr class="dropdown-sectionider"></li>
-                    <li><a class="dropdown-item" href="#">MI CUENTA</a></li>
+                    <li><a class="dropdown-item" href="./pages/registro.html">REGISTRARSE</a></li>
                     </ul>
                 </li> 
             </ul>
@@ -64,23 +59,23 @@
         <!-- SECCION BANNER -->
         <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <section class="carousel-inner">
-              <section class="carousel-item active" data-bs-interval="10000">
-                <img src="./assets/img/banner.jpg" class="d-block w-100" alt="articulos filgo">
+              <section class="carousel-item active" data-bs-interval="3000">
+                <a href="./pages/tienda.html"><img src="./assets/img/dia-del-nino-tapimovil-vertice-plow-ruibal-toyco.svg" class="d-block w-100" alt="" ></a>
               </section>
-              <section class="carousel-item" data-bs-interval="2000">
-                <img src="./assets/img/banner.jpg" class="d-block w-100" alt="articulos filgo">
+              <section class="carousel-item" data-bs-interval="3000">
+                <a href="./pages/tienda.html"><img src="./assets/img/agendas-2023-onix-mooving-nivel10-onix.svg" class="d-block w-100" alt=""></a>
               </section>
-              <section class="carousel-item">
-                <img src="./assets/img/banner.jpg" class="d-block w-100" alt="articulos filgo">
+              <section class="carousel-item" data-bs-interval="3000">
+                <a href="./pages/tienda.html"><img src="./assets/img/preventa-agendas-mooving-2023.svg" class="d-block w-100" alt=""></a>
               </section>
             </section>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+              <span class="visually-hidden">Siguiente</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+              <span class="carousel-control-next-icon" aria-hidden="true" background-color="red"></span>
+              <span class="visually-hidden">Anterior</span>
             </button>
           </section>
          
@@ -135,16 +130,117 @@
                 <section class="ultimosTitulo">
                     <H4>ULTIMOS INGRESOS</H4>
                 </section>
-            </section>          
-            <section class="ultimosIngresos row justify-content-between text-center">  
-                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
-                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
-                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
-                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
-                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>
-                <a href="#" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2"><img src="./assets/img/permanen.png" class="img-fluid"></a>                
-            </section>
-        </section>    
+            </section> 
+            <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <section class="carousel-inner">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <section class="ultimosIngresos row">  
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/agenda-mooving-15x21-semanal-black-1404145.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 15X21 BLACK</h5></a>
+                                    <span>$3.295,83 IVA inc*</span>
+                                    <small>cod: 1819862</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/agenda-mooving-14x20-2dxp-harry-potter-diaria-1404222.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 14X20 HARRY POTTER</h5></a>
+                                    <span> $3.068,53 IVA inc*</span>
+                                    <small>cod: 1819854</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/agenda-mooving-14x20-2dxp-mickey-2d-x-pagina-1404121.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 14X20 MICKEY</h5></a>
+                                    <span>$2.841,23 IVA inc*</span>
+                                    <small>cod: 1819864</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/agenda-mooving-14x20-2dxp-minnie-2d-x-pagina-1404131.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 14X20 2DXP MINNIE</h5></a>
+                                    <span>$1818,38 IVA inc*</span>
+                                    <small>cod: 1819866</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/agenda-mooving-15x21-semanal-coloring-lettering-1404151.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 15X21 LETTERING</h5></a>
+                                    <span>$2045,68 IVA inc*</span>
+                                    <small>cod: 1819865</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/agenda-mooving-man-15x21-diaria-1405129.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING MAN 15X21 DIARIA</h5></a>
+                                    <span>$2272,98 IVA inc*</span>
+                                    <small>cod: 1819871</small>
+                                </div> 
+                            </section>  
+                            </div>
+                            <div class="carousel-item">
+                            <section class="ultimosIngresos row">  
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/agenda-mooving-16x22-diaria-beauty-1417134.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 16X22 BEAUTY</h5></a>
+                                    <span>$4205,02 IVA inc*</span>
+                                    <small>cod: 1819844</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/agenda-mooving-14x20-diaria-disney-100-aniversario-1418118.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>AGENDA MOOVING 14X20 DISNEY 100 AÑOS</h5></a>
+                                    <span>$4534,60 IVA inc*</span>
+                                    <small>cod: 1819867</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/marcador-maped-pastel-x-10.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>MARCADOR MAPED PASTEL X 10</h5></a>
+                                    <span>$527,42 IVA inc*</span>
+                                    <small>cod: 1284004</small>
+                                </div>                                                                                 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-122">
+                                    <img src="../assets/img/lapiz-color-maped-x12-largo-pastel.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>LAPIZ COLOR MAPED  X12 PASTEL</h5></a>
+                                    <span>$479,72 IVA inc*</span>
+                                    <small>cod: 1285008</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/lapiz-color-maped-gel-x-12.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>LAPIZ COLOR MAPED GEL X 12</h5></a>
+                                    <span>$1439,12 IVA inc*</span>
+                                    <small>cod: 1285033</small>
+                                </div> 
+                                <!-- CONTENEDOR DE PRODUCTOS -->
+                                <div class= "tarjeta2 col-12 col-lg-6 col-xs-12">
+                                    <img src="../assets/img/lapiz-negro-maped-sin-goma-tubo-x-72.jpg" alt="">
+                                    <a href="./pages/tienda.html"><h5>LAPIZ NEGRO MAPED TUBO X 72</h5></a>
+                                    <span>$1989,91 IVA inc*</span>
+                                    <small>cod: 1285108</small>
+                                </div> 
+                                </section>
+                            </div>
+                            </div>
+                        </div>    
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+            </section>   
+             
         
         <!-- SECCION UBICACION -->
         <section class="mainUbicacion" >

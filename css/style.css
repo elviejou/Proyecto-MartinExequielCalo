@@ -49,6 +49,18 @@ body {
     text-decoration: none;
     list-style: none; }
 
+/* Banner */
+.banner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px; }
+
+.carousel-control-next-icon {
+  background-color: red; }
+
+.carousel-control-prev-icon {
+  background-color: red; }
+
 /* Servicios */
 .mainServicios {
   background: white;
@@ -68,19 +80,61 @@ body {
     background-color: #FCE373; }
 
 /* ULTIMOS INGRESOS */
-.mainUltimosIngresos img {
-  margin: 20px 0 20px 0; }
-
-.mainUltimosIngresos .ultimosBoton {
-  display: flex;
-  width: 100%;
-  justify-content: center; }
-  .mainUltimosIngresos .ultimosBoton .ultimosTitulo {
+.mainUltimosIngresos {
+  width: auto;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .mainUltimosIngresos a {
+    text-decoration: none;
+    color: black; }
+  .mainUltimosIngresos img {
+    margin: 20px 0; }
+  .mainUltimosIngresos .ultimosBoton {
     display: flex;
     width: 100%;
-    font-size: 26px;
-    justify-content: center;
-    background-color: #E9DCFF; }
+    justify-content: center; }
+    .mainUltimosIngresos .ultimosBoton .ultimosTitulo {
+      display: flex;
+      margin: 10px 0;
+      width: 100%;
+      font-size: 26px;
+      justify-content: center;
+      background-color: #E9DCFF; }
+  .mainUltimosIngresos .ultimosIngresos {
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+    margin: 20px 0; }
+    .mainUltimosIngresos .ultimosIngresos .contenedorProductos, .mainUltimosIngresos .ultimosIngresos .tarjeta2 {
+      width: 227px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2); }
+      .mainUltimosIngresos .ultimosIngresos .contenedorProductos img, .mainUltimosIngresos .ultimosIngresos .tarjeta2 img {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-content: center; }
+        .mainUltimosIngresos .ultimosIngresos .contenedorProductos img:hover, .mainUltimosIngresos .ultimosIngresos .tarjeta2 img:hover {
+          transform: scale(1.1); }
+      .mainUltimosIngresos .ultimosIngresos .contenedorProductos .nombreProductos, .mainUltimosIngresos .ultimosIngresos .tarjeta2 .nombreProductos, .mainUltimosIngresos .ultimosIngresos .contenedorProductos .tarjeta2 > h5, .mainUltimosIngresos .ultimosIngresos .tarjeta2 > h5 {
+        width: 200px;
+        text-align: center;
+        font-size: 20px; }
+      .mainUltimosIngresos .ultimosIngresos .contenedorProductos .precioProductos, .mainUltimosIngresos .ultimosIngresos .tarjeta2 .precioProductos, .mainUltimosIngresos .ultimosIngresos .contenedorProductos .tarjeta2 > span, .mainUltimosIngresos .ultimosIngresos .tarjeta2 > span {
+        color: red;
+        width: 200px;
+        text-align: center;
+        font-size: 20px; }
+      .mainUltimosIngresos .ultimosIngresos .contenedorProductos .codigoProductos, .mainUltimosIngresos .ultimosIngresos .tarjeta2 .codigoProductos, .mainUltimosIngresos .ultimosIngresos .contenedorProductos .tarjeta2 > small, .mainUltimosIngresos .ultimosIngresos .tarjeta2 > small {
+        color: black;
+        width: 200px;
+        height: 21px;
+        text-align: center;
+        font-size: 14px; }
 
 /* UBICACIÓN */
 .mainUbicacion .ubicacionBoton {
@@ -130,9 +184,15 @@ body {
   font-weight: 600;
   color: white; }
 
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: "menu menu menu menu menu menu menu menu menu menu menu menu" "main main main main main main main main main main main main" "footer footer  footer footer footer footer footer footer  footer footer footer footer"; }
+
 /* FOOTER */
 footer {
-  padding: 20px 0px 20px 0px;
+  padding: 20px 10px 10px 0px;
   background-color: beige; }
   footer .footerContenedor {
     grid-area: footer;
@@ -145,12 +205,30 @@ footer {
 /* PAGINA NOSOTROS*/
 .nosotrosPage {
   text-align: justify;
-  margin: 40px; }
+  margin: 60px; }
+  .nosotrosPage h1 {
+    color: red;
+    text-align: center;
+    margin: 30px; }
+  .nosotrosPage h3 {
+    color: red;
+    margin-top: 20px; }
 
 /* CAMBIO DE PRECIOS*/
-.cambioDePrecios {
+.main h1 {
+  text-align: center;
+  color: red; }
+
+.main .cambioDePrecios {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: justify;
-  margin: 40px; }
+  margin: 15px; }
+  .main .cambioDePrecios .aumentosConetnedor {
+    margin: 20px; }
 
 /* LOGIN*/
 /* PAGINA TIENDA */
@@ -193,6 +271,7 @@ footer {
     .paginaTienda .shop .contenedorProductos img, .paginaTienda .shop .tarjeta2 img {
       display: flex;
       width: auto;
+      height: 280px;
       justify-content: center;
       align-content: center; }
       .paginaTienda .shop .contenedorProductos img:hover, .paginaTienda .shop .tarjeta2 img:hover {
@@ -202,6 +281,8 @@ footer {
       width: 227px;
       text-align: center;
       font-size: 20px; }
+      .paginaTienda .shop .contenedorProductos .nombreProductos a, .paginaTienda .shop .tarjeta2 .nombreProductos a, .paginaTienda .shop .contenedorProductos .tarjeta2 > h5 a, .paginaTienda .shop .tarjeta2 > h5 a {
+        text-decoration: none; }
     .paginaTienda .shop .contenedorProductos .precioProductos, .paginaTienda .shop .tarjeta2 .precioProductos, .paginaTienda .shop .contenedorProductos .tarjeta2 > span, .paginaTienda .shop .tarjeta2 > span {
       color: red;
       width: 227px;

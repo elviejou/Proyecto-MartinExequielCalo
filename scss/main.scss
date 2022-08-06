@@ -8,14 +8,16 @@ body{
 }
 @import "variables";
 @import "header";
+@import "mainBanner";
 @import "mainServicios";
 @import "mainMarcas";
 @import "mainUltimosIngresos";
 @import "mainUbicacion";
 @import "mainContacto";
+@import "contenedor";
 @import "footer";
 @import "nosotrosPagina";
-@import "cambioPrecios";
+@import "preciosPagina";
 @import "loginPagina";
 @import "tiendaPagina";
 @import "tiendaProductos";
